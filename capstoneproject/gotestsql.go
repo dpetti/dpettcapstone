@@ -2,16 +2,16 @@ package main
 import(
    "database/sql"
   _ "github.com/go-sql-driver/mysql"
-   "fmt"
+//   "fmt"
    "log"
 )
 func main() {
-    fmt.Println("Go MySQL Tutorial")
+
 
     // Open up our database connection.
     // I've set up a database on my local machine using phpmyadmin.
     // The database is called testDb
-    db, err := sql.Open("mysql", "dpetti:isc496@/dpetti_22S")
+    db, err := sql.Open("mysql", "dpetti:isc496@/test")
 
     // if there is an error opening the connection, handle it
     if err != nil {
@@ -27,7 +27,7 @@ func main() {
             log.Fatalln(err)
 
         } else {
-            log.Println("mysqld is alive")
+            log.Println("mysqld is WORKING!!!!")
 
         }
 
