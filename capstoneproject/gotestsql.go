@@ -27,7 +27,7 @@ func main() {
             log.Fatalln(err)
 
         } else {
-            log.Println("mysqld is WORKING!!!!")
+            log.Println("mysqld is WOKING!!!!")
 
         }
 
